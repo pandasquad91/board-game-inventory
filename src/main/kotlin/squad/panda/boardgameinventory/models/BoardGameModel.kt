@@ -13,6 +13,7 @@ data class BoardGameModel(
     var id: Long = -1,
     var title: String = "",
     var description: String = "",
+    var category: String = "",
     var minPlayers: Int = 0,
     var maxPlayers: Int = 0,
     var quantity: Int = 0,
