@@ -9,17 +9,9 @@ import squad.panda.boardgameinventory.models.BoardGameModel
 @SpringBootApplication
 class BoardGameInventoryApplication {
 
-	@Bean
-	fun run(repository: BoardGameRepository) = ApplicationRunner {
-		repository.save(BoardGameModel(
-			title = "Test",
-			description = "Lorem ipsum",
-			category = "Social / Funny",
-			minPlayers = 2,
-			maxPlayers = 4,
-			quantity = 1
-		))
-	}
+//	@Bean
+//	fun run(repository: BoardGameRepository) = ApplicationRunner {
+//	}
 
 }
 

@@ -1,10 +1,9 @@
 spring:
   jpa:
     hibernate:
-      # TODO: change to validate/update instead
-      # Right now this will create new tables each time the program is run
-      # I think we don't want that, we want to just read existing tables
-      ddl-auto: create
+      # create = wipe db each launch
+      # update = use existing db
+      ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     url: "jdbc:postgresql://localhost:5432/board_game_inventory"
